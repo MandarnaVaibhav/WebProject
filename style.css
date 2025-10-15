@@ -71,7 +71,7 @@ ul li a{
     transition: 0.6s ease;
     color: #ef6b2a;
 }
-
+/* info */
 .infocontainer{
     background-color: #ece7f8;
     height: 100vh;
@@ -183,4 +183,96 @@ ul li a{
     color: #141611;
     padding-top: 20px;
     font-weight: bold;
+}
+
+/* ContactUS */
+
+.topcontent{
+    background-color: rgb(218, 219, 211);
+    height: 30vh;
+    text-align: center;
+    
+}
+
+.contactcontainer{
+    background-color: #f4c2c2;
+    
+    text-align: center;
+    
+}
+.heading2{
+    padding-top: 10px;
+    font-size: 20px;
+    color: rgb(29, 167, 54);
+}
+.contactheading{
+    font-size: 40px;
+    color: rgb(43, 155, 196);
+    padding-top: 20px;
+}
+.contactpara{
+    font-size: 20px;
+    color: rgb(11, 39, 40);
+    padding-top: 20px;
+    font-weight: bold;
+}
+.contentpara{
+    font-size: 20px;
+    color: rgb(10, 32, 33);
+    padding-top: 20px;
+    font-weight: bold;
+}
+.btn{
+    background: #62c538;
+    padding:10px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 50;
+    border-radius: 30px;
+    
+}
+.popup{
+
+    position: fixed;
+    top:10%;    
+    left:50%;
+    transform: translate(-50%, 0) scale(0);
+    background: #f7f1e3;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+    z-index:1000;
+    
+}
+.open-popup{
+    visibility: visible;
+    transform: translate(-50%, 0) scale(1);
+   
+}
+.popup h2{
+    font-size: 25px;
+    margin-top: 20px;
+}
+.popup button{
+    background: #cbd7c5;
+    padding:10px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+
+    border-radius: 30px;
+    margin-top: 15px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
 }
