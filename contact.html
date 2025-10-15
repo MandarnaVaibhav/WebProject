@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact - Vaibhav Designs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <div class="topcontent">
+            <div class="tophedpar">
+                <div class="heading1">
+                    <h1>Let's Talk Design, Let's Talk Spaces</h1>
+                </div>
+                <div class="heading2">
+                    <h2>Contact US</h2>
+                </div>
+                <div class="contentpara">
+                    <p>We're always excited to collaborate on fresh ideas and inspiring interiors.<br> Whether you’re
+                        looking to design your dream home, revamp your workspace, partner with us, or simply explore our
+                        creative solutions - get in touch to see how we can bring your vision to life.</p>
+                </div>
+            </div>  
+        </div> -->
+    <div class="contactcontainer">
+        <h1 class="contactheading">Get in Touch</h1>
+        <p class="contactpara">
+            We'd love to hear from you!<br>
+            Whether you have questions about our services, want to discuss a project,
+            or just want to say hello, feel free to reach out using the form below.
+        </p>
+
+
+        <input type="text" id="Name" placeholder="Name *" class="inputbox"><br><br>
+        <input type="text" id="Email" placeholder="Email *" class="inputbox"><br><br>
+        <input type="text" placeholder="Address" class="inputbox"><br><br>
+        <input type="text" placeholder="Phone Number" class="inputbox"><br><br>
+
+        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+
+
+        <div class="popup" id="popup">
+            <h2 id="popup-message">Thanks For Contacting Us<br>Have A Nice Day</h2>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+        let popupMessage = document.getElementById("popup-message");
+
+        function openPopup() {
+            let nameValue = document.getElementById("Name").value.trim();
+            let emailValue = document.getElementById("Email").value.trim();
+
+
+            if (nameValue === "" || emailValue === "") {
+                alert(" Please fill in both Name and Email fields before submitting.");
+                return;
+            }
+
+            popupMessage.innerHTML = `Thanks For Contacting Us, ${nameValue}!<br>Have A Nice Day`;
+            popup.classList.add("open-popup");
+
+
+            document.getElementById("Name").value = "";
+            document.getElementById("Email").value = "";
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+
+</html>
